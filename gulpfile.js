@@ -73,8 +73,8 @@ gulp.task('scripts', function() {
 
 // Define a task to watch changes in js and sass folders
 gulp.task('watch', function () {
-    gulp.watch('js/*.js', ['lint', 'scripts']);
-    gulp.watch('sass/*.scss', ['sass']);
+    gulp.watch('js/**/*.js', ['lint', 'scripts']);
+    gulp.watch('sass/**/*.scss', ['sass']);
 });
 
 // Define a default task
